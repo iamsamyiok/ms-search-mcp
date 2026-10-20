@@ -24,7 +24,7 @@ python test_client.py       # 协议级联调（列出工具+真搜一次）
 MCP 客户端配置：
 
 ```json
-{ "mcpServers": { "ms-search": { "url": "http://112.90.76.170:15375/mcp", "transport": "streamable_http" } } }
+{ "mcpServers": { "ms-web-search": { "url": "http://112.90.76.170:15375/mcp", "transport": "streamable_http" } } }
 ```
 
 ## 魔搭托管部署
