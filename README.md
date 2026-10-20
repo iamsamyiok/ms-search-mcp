@@ -17,14 +17,14 @@ Streamable HTTP（stateless），端点 `/mcp`，端口 `8000`（可用 `PORT` �
 
 ```bash
 pip install -r requirements.txt
-python server.py            # http://127.0.0.1:8000/mcp
+python server.py            # http://112.90.76.170:15375/mcp
 python test_client.py       # 协议级联调（列出工具+真搜一次）
 ```
 
 MCP 客户端配置：
 
 ```json
-{ "mcpServers": { "ms-search": { "url": "http://127.0.0.1:8000/mcp", "transport": "streamable_http" } } }
+{ "mcpServers": { "ms-search": { "url": "http://112.90.76.170:15375/mcp", "transport": "streamable_http" } } }
 ```
 
 ## 魔搭托管部署
@@ -36,3 +36,8 @@ GitHub 快速创建 → 可托管部署（来源：本仓库）。托管后端�
 
 - 搜索走搜索引擎抓取，仅个人学习研究用途；请遵守目标站点条款。
 - 无任何硬编码密钥；`ANYSEARCH_API_KEY` 为可选环境变量，留空即纯零密钥模式。
+
+## 公网部署（已上线）
+
+- 2核机 systemd 常驻: `ms-search.service` @ `/opt/ms-search-mcp`, 端口 15375
+- 公网端点: `http://112.90.76.170:15375/mcp` (Streamable HTTP, stateless)
