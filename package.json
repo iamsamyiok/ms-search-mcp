@@ -1,0 +1,12 @@
+{
+  "name": "ms-web-search-mcp",
+  "version": "1.0.0",
+  "description": "MCP STDIO server: web search (bing scrape zero-key + baidu fallback) and page text extraction. 零依赖网页搜索 MCP。",
+  "main": "index.js",
+  "bin": { "ms-web-search-mcp": "index.js" },
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "keywords": ["mcp", "search", "bing", "web-search", "model-context-protocol"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/iamsamyiok/ms-search-mcp.git" }
+}
